@@ -64,6 +64,7 @@
 			
 			$output .= "<ul>";
 			$output .= '<li><a href="index.php">Pocetna</a></li>';
+      $output .= '<li><a href="kontakt.php">Kontakt</a></li>';
 			
 			if($this->UserIsAuthenticated())
 			{
