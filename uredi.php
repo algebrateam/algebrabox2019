@@ -75,7 +75,8 @@
 				
 				if($stmt->execute())
 				{
-					$this->BackToLanding();
+					//$this->BackToLanding();
+          $this->BackToUserFileListing();
 				}
 				else
 				{
@@ -108,6 +109,10 @@
 		protected function PageRequiresAuthenticUser()
 		{
 			return true;
+		}
+    public function BackToUserFileListing()
+		{
+			header("Location: moje.php");
 		}
 	}
 
