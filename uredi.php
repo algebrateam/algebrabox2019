@@ -78,7 +78,7 @@
 					//$this->BackToLanding();
           $this->BackToUserFileListing();
 				}
-				else
+				else  //Ukoliko promjena nije uspjela na bazi, vrati staro ime filea
 				{
 					echo "Pogreška u izvršavanju upita!";
 					move_uploaded_file($newPath, $oldPath);
